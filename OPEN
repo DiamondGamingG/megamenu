@@ -1,0 +1,9 @@
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Visible = false
+	script.Parent.Parent.page1.Visible = true
+end)
+
+button = script.Parent
+button.Draggable = true
+button.Active = true
+button.Selectable = true
