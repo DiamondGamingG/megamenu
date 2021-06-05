@@ -1,4 +1,3 @@
-script.Parent.MouseButton1Click:Connect(function()
 	-- Made By : Bullet-X-Proof
 
 
@@ -95,4 +94,3 @@ script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.MouseButton1Click:connect(click)
 	end
 	coroutine.wrap(PZTHXOV_fake_script)()
-end)
