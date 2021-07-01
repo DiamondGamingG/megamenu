@@ -1,0 +1,585 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local madef = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Welcome = Instance.new("TextLabel")
+local maded = Instance.new("TextLabel")
+local Frame2 = Instance.new("Frame")
+local BEAUTIFUL = Instance.new("TextLabel")
+local VERSION = Instance.new("TextLabel")
+local XX = Instance.new("TextButton")
+local BLOXBURG = Instance.new("TextButton")
+local ImageButton = Instance.new("ImageButton")
+local DAHOOD = Instance.new("TextButton")
+local MURDER = Instance.new("TextButton")
+local JAILBREAK = Instance.new("TextButton")
+local nextpage = Instance.new("TextButton")
+local OPEN = Instance.new("TextButton")
+local Frame3 = Instance.new("Frame")
+local transparent = Instance.new("TextButton")
+local option = Instance.new("TextLabel")
+local transparent_2 = Instance.new("TextButton")
+local DESTROYGUI = Instance.new("TextButton")
+local BESTCLIENTS = Instance.new("TextButton")
+local FERMETURE = Instance.new("TextButton")
+local prem = Instance.new("TextLabel")
+local Frame4 = Instance.new("Frame")
+local BEAUTIFUL2 = Instance.new("TextLabel")
+local VERSION2 = Instance.new("TextLabel")
+local ADOPTME = Instance.new("TextButton")
+local ancientpage = Instance.new("TextButton")
+
+--Properties:
+
+madef.Name = "madef"
+madef.Parent = game.CoreGui
+madef.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = madef
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.33464095, 0, -0.000450186431, 0)
+Frame.Size = UDim2.new(0, 432, 0, 300)
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Frame
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.BorderSizePixel = 0
+Welcome.Position = UDim2.new(0.259615391, 0, 0, 0)
+Welcome.Size = UDim2.new(0, 200, 0, 50)
+Welcome.Font = Enum.Font.SourceSans
+Welcome.Text = "Welcome back !!!"
+Welcome.TextColor3 = Color3.fromRGB(255, 0, 0)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+maded.Name = "maded"
+maded.Parent = Frame
+maded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+maded.BorderSizePixel = 10
+maded.Position = UDim2.new(0.284722209, 0, 0.803333282, 0)
+maded.Size = UDim2.new(0, 200, 0, 50)
+maded.Font = Enum.Font.SourceSans
+maded.Text = "MADE BY R0BL0X_Clients"
+maded.TextColor3 = Color3.fromRGB(0, 0, 0)
+maded.TextScaled = true
+maded.TextSize = 14.000
+maded.TextWrapped = true
+
+Frame2.Name = "Frame2"
+Frame2.Parent = madef
+Frame2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame2.BorderSizePixel = 10
+Frame2.Position = UDim2.new(0.209792539, 0, 0.0980392098, 0)
+Frame2.Size = UDim2.new(0, 473, 0, 314)
+
+BEAUTIFUL.Name = "BEAUTIFUL"
+BEAUTIFUL.Parent = Frame2
+BEAUTIFUL.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+BEAUTIFUL.BorderSizePixel = 0
+BEAUTIFUL.Position = UDim2.new(0.270613104, 0, 0, 0)
+BEAUTIFUL.Size = UDim2.new(0, 200, 0, 50)
+BEAUTIFUL.Font = Enum.Font.SourceSans
+BEAUTIFUL.Text = "BEAUTIFUL"
+BEAUTIFUL.TextColor3 = Color3.fromRGB(255, 0, 0)
+BEAUTIFUL.TextScaled = true
+BEAUTIFUL.TextSize = 14.000
+BEAUTIFUL.TextWrapped = true
+
+VERSION.Name = "VERSION"
+VERSION.Parent = Frame2
+VERSION.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+VERSION.BorderSizePixel = 0
+VERSION.Position = UDim2.new(0.6934461, 0, 0.105095543, 0)
+VERSION.Size = UDim2.new(0, 70, 0, 17)
+VERSION.Font = Enum.Font.SourceSans
+VERSION.Text = "V4"
+VERSION.TextColor3 = Color3.fromRGB(0, 0, 0)
+VERSION.TextScaled = true
+VERSION.TextSize = 14.000
+VERSION.TextWrapped = true
+
+XX.Name = "XX"
+XX.Parent = Frame2
+XX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+XX.Size = UDim2.new(0, 47, 0, 33)
+XX.Font = Enum.Font.SourceSans
+XX.Text = "X"
+XX.TextColor3 = Color3.fromRGB(0, 0, 0)
+XX.TextScaled = true
+XX.TextSize = 14.000
+XX.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+XX.TextWrapped = true
+
+BLOXBURG.Name = "BLOXBURG"
+BLOXBURG.Parent = Frame2
+BLOXBURG.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+BLOXBURG.BorderSizePixel = 10
+BLOXBURG.Position = UDim2.new(0.027484145, 0, 0.203821659, 0)
+BLOXBURG.Size = UDim2.new(0, 200, 0, 50)
+BLOXBURG.Font = Enum.Font.SourceSans
+BLOXBURG.Text = "BLOXBURG"
+BLOXBURG.TextColor3 = Color3.fromRGB(0, 0, 0)
+BLOXBURG.TextScaled = true
+BLOXBURG.TextSize = 14.000
+BLOXBURG.TextWrapped = true
+
+ImageButton.Parent = Frame2
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.Position = UDim2.new(0.824524224, 0, 0, 0)
+ImageButton.SelectionImageObject = Frame3
+ImageButton.Size = UDim2.new(0, 83, 0, 84)
+ImageButton.Image = "http://www.roblox.com/asset/?id=7027301433"
+
+DAHOOD.Name = "DAHOOD"
+DAHOOD.Parent = Frame2
+DAHOOD.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+DAHOOD.BorderSizePixel = 10
+DAHOOD.Position = UDim2.new(0.027484145, 0, 0.452229321, 0)
+DAHOOD.Size = UDim2.new(0, 200, 0, 50)
+DAHOOD.Font = Enum.Font.SourceSans
+DAHOOD.Text = "DA HOOD"
+DAHOOD.TextColor3 = Color3.fromRGB(0, 0, 0)
+DAHOOD.TextScaled = true
+DAHOOD.TextSize = 14.000
+DAHOOD.TextWrapped = true
+
+MURDER.Name = "MURDER"
+MURDER.Parent = Frame2
+MURDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MURDER.BorderSizePixel = 10
+MURDER.Position = UDim2.new(0.0274841432, 0, 0.694267511, 0)
+MURDER.Size = UDim2.new(0, 200, 0, 50)
+MURDER.Font = Enum.Font.SourceSans
+MURDER.Text = "Murder"
+MURDER.TextColor3 = Color3.fromRGB(0, 0, 0)
+MURDER.TextScaled = true
+MURDER.TextSize = 14.000
+MURDER.TextWrapped = true
+
+JAILBREAK.Name = "JAILBREAK"
+JAILBREAK.Parent = Frame2
+JAILBREAK.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+JAILBREAK.BorderSizePixel = 10
+JAILBREAK.Position = UDim2.new(0.528541207, 0, 0.331210196, 0)
+JAILBREAK.Size = UDim2.new(0, 200, 0, 50)
+JAILBREAK.Font = Enum.Font.SourceSans
+JAILBREAK.Text = "jailbreak"
+JAILBREAK.TextColor3 = Color3.fromRGB(0, 0, 0)
+JAILBREAK.TextScaled = true
+JAILBREAK.TextSize = 14.000
+JAILBREAK.TextWrapped = true
+
+nextpage.Name = "nextpage"
+nextpage.Parent = Frame2
+nextpage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nextpage.BackgroundTransparency = 1.000
+nextpage.Position = UDim2.new(0.897994578, 0, 0.840764344, 0)
+nextpage.Size = UDim2.new(0, 47, 0, 50)
+nextpage.Font = Enum.Font.SourceSans
+nextpage.Text = ">"
+nextpage.TextColor3 = Color3.fromRGB(0, 0, 0)
+nextpage.TextScaled = true
+nextpage.TextSize = 14.000
+nextpage.TextWrapped = true
+
+OPEN.Name = "OPEN"
+OPEN.Parent = madef
+OPEN.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+OPEN.BackgroundTransparency = 1.000
+OPEN.BorderSizePixel = 10
+OPEN.Position = UDim2.new(0, 0, 0.585034013, 0)
+OPEN.Size = UDim2.new(0, 109, 0, 50)
+OPEN.Font = Enum.Font.Cartoon
+OPEN.Text = "OPEN"
+OPEN.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPEN.TextScaled = true
+OPEN.TextSize = 14.000
+OPEN.TextTransparency = 1.000
+OPEN.TextWrapped = true
+
+Frame3.Name = "Frame3"
+Frame3.Parent = madef
+Frame3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame3.Position = UDim2.new(0.224539876, 0, 0.111111112, 0)
+Frame3.Size = UDim2.new(0, 420, 0, 306)
+Frame3.Visible = false
+
+transparent.Name = "transparent"
+transparent.Parent = Frame3
+transparent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+transparent.Position = UDim2.new(0.0190476198, 0, 0.222222239, 0)
+transparent.Size = UDim2.new(0, 200, 0, 50)
+transparent.Font = Enum.Font.SourceSans
+transparent.Text = "TRANSPARENT"
+transparent.TextColor3 = Color3.fromRGB(0, 0, 0)
+transparent.TextScaled = true
+transparent.TextSize = 14.000
+transparent.TextWrapped = true
+
+option.Name = "option"
+option.Parent = Frame3
+option.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+option.BorderSizePixel = 0
+option.Position = UDim2.new(0.261904776, 0, -0.0130718956, 0)
+option.Size = UDim2.new(0, 200, 0, 50)
+option.Font = Enum.Font.Cartoon
+option.Text = "settings"
+option.TextColor3 = Color3.fromRGB(0, 0, 0)
+option.TextScaled = true
+option.TextSize = 14.000
+option.TextWrapped = true
+
+transparent_2.Name = "transparent"
+transparent_2.Parent = Frame3
+transparent_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+transparent_2.Position = UDim2.new(0.0190476198, 0, 0.418300688, 0)
+transparent_2.Size = UDim2.new(0, 200, 0, 50)
+transparent_2.Font = Enum.Font.SourceSans
+transparent_2.Text = "NO TRANSPARENT"
+transparent_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+transparent_2.TextScaled = true
+transparent_2.TextSize = 14.000
+transparent_2.TextWrapped = true
+
+DESTROYGUI.Name = "DESTROYGUI"
+DESTROYGUI.Parent = Frame3
+DESTROYGUI.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+DESTROYGUI.Position = UDim2.new(0.0190476198, 0, 0.63398695, 0)
+DESTROYGUI.Size = UDim2.new(0, 200, 0, 50)
+DESTROYGUI.Font = Enum.Font.SourceSans
+DESTROYGUI.Text = "DESTROY GUI"
+DESTROYGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+DESTROYGUI.TextScaled = true
+DESTROYGUI.TextSize = 14.000
+DESTROYGUI.TextWrapped = true
+
+BESTCLIENTS.Name = "BESTCLIENTS"
+BESTCLIENTS.Parent = Frame3
+BESTCLIENTS.BackgroundColor3 = Color3.fromRGB(0, 0, 127)
+BESTCLIENTS.Position = UDim2.new(0.519047618, 0, 0.248366028, 0)
+BESTCLIENTS.Size = UDim2.new(0, 193, 0, 154)
+BESTCLIENTS.Font = Enum.Font.SourceSans
+BESTCLIENTS.Text = "BESTCLIENT"
+BESTCLIENTS.TextColor3 = Color3.fromRGB(0, 0, 0)
+BESTCLIENTS.TextScaled = true
+BESTCLIENTS.TextSize = 14.000
+BESTCLIENTS.TextWrapped = true
+
+FERMETURE.Name = "FERMETURE"
+FERMETURE.Parent = Frame3
+FERMETURE.BackgroundColor3 = Color3.fromRGB(255, 69, 72)
+FERMETURE.Position = UDim2.new(0, 0, 0.872548997, 0)
+FERMETURE.Size = UDim2.new(0, 419, 0, 36)
+FERMETURE.Font = Enum.Font.SourceSans
+FERMETURE.Text = "X"
+FERMETURE.TextColor3 = Color3.fromRGB(0, 0, 0)
+FERMETURE.TextScaled = true
+FERMETURE.TextSize = 14.000
+FERMETURE.TextWrapped = true
+
+prem.Name = "prem"
+prem.Parent = Frame3
+prem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+prem.BackgroundTransparency = 1.000
+prem.Position = UDim2.new(0.699999988, 0, 0.0130718956, 0)
+prem.Size = UDim2.new(0, 117, 0, 56)
+prem.Font = Enum.Font.SourceSans
+prem.Text = "ADOPT ME AND BLOXBURG SCRIPT ONLY SYNAPSE"
+prem.TextColor3 = Color3.fromRGB(0, 0, 0)
+prem.TextScaled = true
+prem.TextSize = 14.000
+prem.TextWrapped = true
+
+Frame4.Name = "Frame4"
+Frame4.Parent = madef
+Frame4.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+Frame4.BorderSizePixel = 10
+Frame4.Position = UDim2.new(0.207338557, 0, 0.0980392098, 0)
+Frame4.Size = UDim2.new(0, 473, 0, 314)
+Frame4.Visible = false
+
+BEAUTIFUL2.Name = "BEAUTIFUL2"
+BEAUTIFUL2.Parent = Frame4
+BEAUTIFUL2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+BEAUTIFUL2.BorderSizePixel = 0
+BEAUTIFUL2.Position = UDim2.new(0.270613104, 0, 0, 0)
+BEAUTIFUL2.Size = UDim2.new(0, 200, 0, 50)
+BEAUTIFUL2.Font = Enum.Font.SourceSans
+BEAUTIFUL2.Text = "BEAUTIFUL"
+BEAUTIFUL2.TextColor3 = Color3.fromRGB(255, 0, 0)
+BEAUTIFUL2.TextScaled = true
+BEAUTIFUL2.TextSize = 14.000
+BEAUTIFUL2.TextWrapped = true
+
+VERSION2.Name = "VERSION2"
+VERSION2.Parent = Frame4
+VERSION2.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+VERSION2.BorderSizePixel = 0
+VERSION2.Position = UDim2.new(0.6934461, 0, 0.105095543, 0)
+VERSION2.Size = UDim2.new(0, 70, 0, 17)
+VERSION2.Font = Enum.Font.SourceSans
+VERSION2.Text = "V4"
+VERSION2.TextColor3 = Color3.fromRGB(0, 0, 0)
+VERSION2.TextScaled = true
+VERSION2.TextSize = 14.000
+VERSION2.TextWrapped = true
+
+ADOPTME.Name = "ADOPTME"
+ADOPTME.Parent = Frame4
+ADOPTME.BackgroundColor3 = Color3.fromRGB(255, 0, 127)
+ADOPTME.BorderSizePixel = 10
+ADOPTME.Position = UDim2.new(0.027484145, 0, 0.203821659, 0)
+ADOPTME.Size = UDim2.new(0, 200, 0, 50)
+ADOPTME.Font = Enum.Font.SourceSans
+ADOPTME.Text = "ADOPT ME"
+ADOPTME.TextColor3 = Color3.fromRGB(0, 0, 0)
+ADOPTME.TextScaled = true
+ADOPTME.TextSize = 14.000
+ADOPTME.TextWrapped = true
+
+ancientpage.Name = "ancientpage"
+ancientpage.Parent = Frame4
+ancientpage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ancientpage.BackgroundTransparency = 1.000
+ancientpage.Position = UDim2.new(-0.000525534153, 0, 0.840764344, 0)
+ancientpage.Size = UDim2.new(0, 47, 0, 50)
+ancientpage.Font = Enum.Font.SourceSans
+ancientpage.Text = "<"
+ancientpage.TextColor3 = Color3.fromRGB(0, 0, 0)
+ancientpage.TextScaled = true
+ancientpage.TextSize = 14.000
+ancientpage.TextWrapped = true
+
+-- Scripts:
+
+local function ZESNJ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	while true do
+		
+		wait(0.09)
+		script.Parent.BackgroundTransparency = script.Parent.BackgroundTransparency + 0.01
+		script.Parent.maded.BackgroundTransparency = script.Parent.maded.BackgroundTransparency + 0.01
+		script.Parent.maded.TextTransparency = script.Parent.maded.TextTransparency + 0.01
+		script.Parent.Welcome.TextTransparency = script.Parent.Welcome.TextTransparency + 0.01
+	end
+end
+coroutine.wrap(ZESNJ_fake_script)()
+local function BSDLCD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Parent.Frame2.Visible = false
+	
+	wait(8)
+	
+	script.Parent.Parent.Frame2.Visible = true
+	script.Parent:Destroy()
+	print("noob")
+end
+coroutine.wrap(BSDLCD_fake_script)()
+local function FWQSHO_fake_script() -- Frame2.LocalScript 
+	local script = Instance.new('LocalScript', Frame2)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FWQSHO_fake_script)()
+local function NWPIDUW_fake_script() -- XX.LocalScript 
+	local script = Instance.new('LocalScript', XX)
+
+	local brick = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(1.3)
+		while brick.BackgroundTransparency < 1 do
+			wait(0.1)
+			brick.JAILBREAK.BackgroundTransparency = brick.JAILBREAK.BackgroundTransparency + 0.05
+			brick.JAILBREAK.TextTransparency = brick.JAILBREAK.TextTransparency + 0.05
+			brick.MURDER.TextTransparency = brick.MURDER.TextTransparency + 0.05
+			brick.MURDER.BackgroundTransparency = brick.MURDER.BackgroundTransparency +0.05
+			brick.DAHOOD.BackgroundTransparency = brick.DAHOOD.BackgroundTransparency + 0.05
+			brick.DAHOOD.TextTransparency = brick.DAHOOD.TextTransparency + 0.05
+			brick.Parent.OPEN.TextTransparency = brick.Parent.OPEN.TextTransparency - 0.05
+			brick.Parent.OPEN.BackgroundTransparency = brick.Parent.OPEN.BackgroundTransparency - 0.05
+			script.Parent.TextTransparency = script.Parent.TextTransparency + 0.05
+			script.Parent.BackgroundTransparency = script.Parent.BackgroundTransparency + 0.05
+			brick.VERSION.TextTransparency = brick.VERSION.TextTransparency + 0.05
+			brick.VERSION.BackgroundTransparency = brick.VERSION.BackgroundTransparency + 0.05
+			brick.BEAUTIFUL.TextTransparency = brick.BEAUTIFUL.TextTransparency + 0.05
+			brick.BEAUTIFUL.BackgroundTransparency = brick.BEAUTIFUL.BackgroundTransparency + 0.05
+			brick.BLOXBURG.TextTransparency = brick.BLOXBURG.TextTransparency + 0.05
+			brick.BLOXBURG.BackgroundTransparency = brick.BLOXBURG.BackgroundTransparency + 0.05
+			brick.BackgroundTransparency = brick.BackgroundTransparency + 0.05
+		end
+		brick.ImageButton.Visible = false
+	end)
+end
+coroutine.wrap(NWPIDUW_fake_script)()
+local function VPMKYDD_fake_script() -- BLOXBURG.LocalScript 
+	local script = Instance.new('LocalScript', BLOXBURG)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+	end)
+end
+coroutine.wrap(VPMKYDD_fake_script)()
+local function IKNCP_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Frame3.Visible = true
+	end)
+end
+coroutine.wrap(IKNCP_fake_script)()
+local function ITFAN_fake_script() -- DAHOOD.LocalScript 
+	local script = Instance.new('LocalScript', DAHOOD)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondGamingG/megamenu/main/CHEATHELP1", true))()
+	end)
+end
+coroutine.wrap(ITFAN_fake_script)()
+local function LNMTTC_fake_script() -- MURDER.LocalScript 
+	local script = Instance.new('LocalScript', MURDER)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+	end)
+end
+coroutine.wrap(LNMTTC_fake_script)()
+local function OXUOMIQ_fake_script() -- Frame2.LocalScript2 
+	local script = Instance.new('LocalScript', Frame2)
+
+	
+end
+coroutine.wrap(OXUOMIQ_fake_script)()
+local function NXSQ_fake_script() -- JAILBREAK.LocalScript 
+	local script = Instance.new('LocalScript', JAILBREAK)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:GetObjects("rbxassetid://3473939051")[1].Source)()
+	end)
+end
+coroutine.wrap(NXSQ_fake_script)()
+local function TONFC_fake_script() -- nextpage.LocalScript 
+	local script = Instance.new('LocalScript', nextpage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Frame4.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TONFC_fake_script)()
+local function DZYML_fake_script() -- OPEN.LocalScript 
+	local script = Instance.new('LocalScript', OPEN)
+
+	local brick = script.Parent.Parent.Frame2
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		wait(1.3)
+		while brick.BackgroundTransparency > 0.01 do
+			wait(0.1)
+			brick.JAILBREAK.TextTransparency = brick.JAILBREAK.TextTransparency - 0.05
+			brick.JAILBREAK.BackgroundTransparency = brick.JAILBREAK.BackgroundTransparency - 0.05
+			brick.MURDER.TextTransparency = brick.MURDER.TextTransparency - 0.05
+			brick.MURDER.BackgroundTransparency = brick.MURDER.BackgroundTransparency - 0.05
+			brick.DAHOOD.BackgroundTransparency = brick.DAHOOD.BackgroundTransparency - 0.05
+			brick.DAHOOD.TextTransparency = brick.DAHOOD.TextTransparency -0.05
+			brick.Parent.OPEN.TextTransparency = brick.Parent.OPEN.TextTransparency + 0.05
+			brick.Parent.OPEN.BackgroundTransparency = brick.Parent.OPEN.BackgroundTransparency + 0.05
+			brick.XX.TextTransparency = brick.XX.TextTransparency - 0.05
+			brick.XX.BackgroundTransparency = brick.XX.BackgroundTransparency - 0.05
+			brick.VERSION.TextTransparency = brick.VERSION.TextTransparency - 0.05
+			brick.VERSION.BackgroundTransparency = brick.VERSION.BackgroundTransparency - 0.05
+			brick.BEAUTIFUL.TextTransparency = brick.BEAUTIFUL.TextTransparency - 0.05
+			brick.BEAUTIFUL.BackgroundTransparency = brick.BEAUTIFUL.BackgroundTransparency - 0.05
+			brick.BLOXBURG.TextTransparency = brick.BLOXBURG.TextTransparency - 0.05
+			brick.BLOXBURG.BackgroundTransparency = brick.BLOXBURG.BackgroundTransparency - 0.05
+			brick.BackgroundTransparency = brick.BackgroundTransparency - 0.05
+		end
+		brick.ImageButton.Visible = true
+	end)
+	
+	
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(DZYML_fake_script)()
+local function JDTGF_fake_script() -- transparent.LocalScript 
+	local script = Instance.new('LocalScript', transparent)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Frame3.BackgroundTransparency = 0.75
+		script.Parent.Parent.Parent.Frame2.BackgroundTransparency = 0.75
+	end)
+end
+coroutine.wrap(JDTGF_fake_script)()
+local function PXYJKUQ_fake_script() -- Frame3.LocalScript 
+	local script = Instance.new('LocalScript', Frame3)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(PXYJKUQ_fake_script)()
+local function PSIOJN_fake_script() -- DESTROYGUI.LocalScript 
+	local script = Instance.new('LocalScript', DESTROYGUI)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(PSIOJN_fake_script)()
+local function XRUCA_fake_script() -- BESTCLIENTS.LocalScript 
+	local script = Instance.new('LocalScript', BESTCLIENTS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DiamondGamingG/megamenu/main/NEW%20CHEAT%20V1", true))()
+	end)
+end
+coroutine.wrap(XRUCA_fake_script)()
+local function GCCVOP_fake_script() -- FERMETURE.LocalScript 
+	local script = Instance.new('LocalScript', FERMETURE)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(GCCVOP_fake_script)()
+local function VDBRHN_fake_script() -- Frame4.LocalScript 
+	local script = Instance.new('LocalScript', Frame4)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(VDBRHN_fake_script)()
+local function BEZVF_fake_script() -- ADOPTME.LocalScript 
+	local script = Instance.new('LocalScript', ADOPTME)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		_G.SubToBloxiScripts = true
+		loadstring(game:HttpGet("https://bloxhub.xyz/script/loader"))()
+	end)
+end
+coroutine.wrap(BEZVF_fake_script)()
+local function ACAND_fake_script() -- ancientpage.LocalScript 
+	local script = Instance.new('LocalScript', ancientpage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Frame2.Visible = true
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ACAND_fake_script)()
