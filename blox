@@ -1,0 +1,514 @@
+-- Decompiled with the Synapse X Luau decompiler.
+
+local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
+local l__ServerCommunication__2 = l__ReplicatedStorage__1:WaitForChild("ServerCommunication");
+local l__LookHandler__3 = script:WaitForChild("LookHandler");
+local l__LocalPlayer__4 = game.Players.LocalPlayer;
+local l__mouse__1 = l__LocalPlayer__4:GetMouse();
+local u2 = nil;
+local u3 = nil;
+local u4 = nil;
+local u5 = nil;
+local u6 = nil;
+local u7 = nil;
+local u8 = nil;
+local u9 = nil;
+local u10 = nil;
+local u11 = nil;
+local u12 = nil;
+local u13 = nil;
+local u14 = nil;
+local u15 = nil;
+local u16 = nil;
+local u17 = nil;
+local u18 = nil;
+local u19 = nil;
+local u20 = nil;
+local u21 = nil;
+local u22 = nil;
+local function u23(p1, p2)
+	local v5 = p1.Parent;
+	while true do
+		if v5.Name:match(p2) == nil then
+			v5 = v5.Parent;
+		end;
+		if v5.Name:match(p2) then
+			break;
+		end;	
+	end;
+	return v5;
+end;
+local u24 = nil;
+local u25 = nil;
+function SelectObject(p3)
+	local v6 = nil;
+	local v7 = nil;
+	if p3 then
+		v7 = p3;
+	elseif l__mouse__1.Target then
+		l__mouse__1.TargetFilter = game.Players.LocalPlayer.Character;
+		v7 = l__mouse__1.Target;
+	end;
+	if v7 then
+		local v8 = v7:FindFirstAncestorWhichIsA("Model");
+		if v8 then
+			v6 = v8;
+			u2 = nil;
+			u3 = nil;
+			u4 = nil;
+			u5 = nil;
+			u6 = nil;
+			u7 = nil;
+			u8 = nil;
+			u9 = nil;
+			u10 = nil;
+			u11 = nil;
+			u12 = nil;
+			u13 = nil;
+			u14 = nil;
+			u15 = nil;
+			u16 = nil;
+			u17 = nil;
+			u18 = nil;
+			u19 = nil;
+			u20 = nil;
+			u21 = nil;
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				local l__LookingAt__9 = v8:FindFirstChild("LookingAt");
+				if l__LookingAt__9 then
+					u19 = v8;
+					if l__LookingAt__9.Value == "Moneyprinter" then
+						u2 = v8;
+					end;
+					if l__LookingAt__9.Value == "Shipment" then
+						u3 = v8;
+					end;
+					if l__LookingAt__9.Value == "Money" then
+						u4 = v8;
+					end;
+					if l__LookingAt__9.Value == "Player" then
+						u5 = v8;
+					end;
+					if l__LookingAt__9.Value == "Turret" then
+						u6 = v8;
+					end;
+					if l__LookingAt__9.Value == "Sign" then
+						u7 = v8;
+					end;
+					if l__LookingAt__9.Value == "VendingMachine" then
+						u8 = v8;
+					end;
+					if l__LookingAt__9.Value == "FoodMachine" then
+						u9 = v8;
+					end;
+					if l__LookingAt__9.Value == "Fuse" then
+						u10 = v8;
+					end;
+					if l__LookingAt__9.Value == "Plant" then
+						u11 = v8;
+					end;
+					if l__LookingAt__9.Value == "PlantFlower" then
+						u11 = v8.Parent;
+						u19 = v8.Parent;
+					end;
+					if l__LookingAt__9.Value == "PlantLamp" then
+						if v7.Name ~= "Range" then
+							u12 = v8;
+						else
+							u19 = nil;
+						end;
+					end;
+					if l__LookingAt__9.Value == "PlantWater" then
+						if v7.Name ~= "Range" then
+							u13 = v8;
+						else
+							u19 = nil;
+						end;
+					end;
+					if l__LookingAt__9.Value == "NPC" then
+						u14 = v8;
+					end;
+					if l__LookingAt__9.Value == "ATM" then
+						u15 = v8;
+					end;
+					if l__LookingAt__9.Value == "BankTerminal" then
+						u16 = v8;
+					end;
+					if l__LookingAt__9.Value == "BloxStateBanker" then
+						u17 = v8;
+					end;
+					if l__LookingAt__9.Value == "Weapon" then
+						u20 = v8;
+					end;
+					if l__LookingAt__9.Value == "FuseDoor" then
+						u21 = v8;
+					end;
+					if string.match(l__LookingAt__9.Value, "BankTycoon_") then
+						u18 = v8;
+					end;
+				end;
+				if not string.match(v8.Name, "BulletproofHelmet") then
+					if string.match(v8.Name, "BulletproofVest") then
+						u5 = v8.Specs.Owner.Value.Character;
+					end;
+				else
+					u5 = v8.Specs.Owner.Value.Character;
+				end;
+			end;
+		end;
+		if v7.Name == "open_from_outside" then
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u22 = v7:FindFirstAncestor("test_door");
+				return "open_from_outside";
+			end;
+		end;
+		if v7.Name == "open_from_inside" then
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u22 = v7:FindFirstAncestor("test_door");
+				return "open_from_inside";
+			end;
+		end;
+		if v7.Name == "open_from_outside_dd" then
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u22 = v7.Parent.Parent.test_door;
+				return "open_from_outside";
+			end;
+		end;
+		if v7.Name == "open_from_inside_dd" then
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u22 = v7.Parent.Parent.test_door;
+				return "open_from_inside";
+			end;
+		end;
+		if string.match(v7:GetFullName(), "prop_door_sliding_double") then
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				if v7.Name == "DoorSection" then
+					u22 = v7.Parent.Parent;
+				elseif v7.Parent.Name == "DoorSection" then
+					u22 = v7.Parent.Parent.Parent;
+				end;
+			end;
+		end;
+		if v7:GetFullName():match("model_window") then
+			local v10 = u23(v7, "model_window");
+			if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u24 = v10;
+			end;
+		end;
+		if v7.Parent.Name == "GarageDoorSwitch" then
+			if v7.Name ~= "Switch" then
+				if v7.Name ~= "Switch2" then
+					if v7.Name ~= "Stand" then
+						if v7.Name == "Pipe" then
+							if (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+								u25 = v7.Parent;
+							end;
+						end;
+					elseif (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+						u25 = v7.Parent;
+					end;
+				elseif (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+					u25 = v7.Parent;
+				end;
+			elseif (game.Workspace[l__LocalPlayer__4.Name].Head.Position - v7.Position).magnitude < 6 then
+				u25 = v7.Parent;
+			end;
+		end;
+	end;
+	return v6;
+end;
+local l__FuncDoor__26 = l__ReplicatedStorage__1:WaitForChild("FuncDoor");
+local l__GarageRemote__27 = l__ReplicatedStorage__1:WaitForChild("GarageRemote");
+local l__FuncPrinter__28 = l__ReplicatedStorage__1:WaitForChild("FuncPrinter");
+local l__MoneyHandler__29 = l__ReplicatedStorage__1:WaitForChild("MoneyHandler");
+local l__FuncTurret__30 = l__ReplicatedStorage__1:WaitForChild("FuncTurret");
+local l__VendingMachine__31 = l__ReplicatedStorage__1:WaitForChild("VendingMachine");
+local l__FoodMachine__32 = l__ReplicatedStorage__1:WaitForChild("FoodMachine");
+local l__FuncFuse__33 = l__ReplicatedStorage__1:WaitForChild("FuncFuse");
+local l__FuncPlants__34 = l__ReplicatedStorage__1:WaitForChild("FuncPlants");
+local l__BankFunctions__35 = l__ReplicatedStorage__1:WaitForChild("BankFunctions");
+local l__FuncPickWeapon__36 = l__ReplicatedStorage__1:WaitForChild("FuncPickWeapon");
+local l__BankTycoonShop__37 = l__ReplicatedStorage__1:WaitForChild("BankTycoonShop");
+local l__FuncPumpkin__38 = l__ReplicatedStorage__1:WaitForChild("FuncPumpkin");
+local l__PickUpPrinter__39 = l__ReplicatedStorage__1:WaitForChild("PickUpPrinter");
+local l__CurrentCamera__40 = workspace.CurrentCamera;
+local l__EventMoneyWeapon__41 = l__ReplicatedStorage__1:WaitForChild("EventMoneyWeapon");
+local l__EventTurret__42 = l__ReplicatedStorage__1:WaitForChild("EventTurret");
+local l__OpenNotification__43 = l__ReplicatedStorage__1:WaitForChild("OpenNotification");
+local l__GiveMoneyWeapon__44 = l__ReplicatedStorage__1:WaitForChild("GiveMoneyWeapon");
+local l__ManageDoor__45 = l__ReplicatedStorage__1:WaitForChild("ManageDoor");
+local l__ReWindowManager__46 = l__ReplicatedStorage__1:WaitForChild("ReWindowManager");
+l__ReplicatedStorage__1:WaitForChild("FuncDoorTitle").OnClientEvent:Connect(function(p4, p5, p6)
+	l__ManageDoor__45:FireServer(p4, p5, p6);
+end);
+local l__leaderstats__11 = game.Players.LocalPlayer:WaitForChild("leaderstats");
+wait(1);
+local function u47(p7)
+	local v12 = SelectObject();
+	if p7 then
+		v12 = SelectObject(p7);
+	end;
+	if u22 then
+		l__FuncDoor__26:FireServer(u22, v12, "Open");
+		u22 = nil;
+	end;
+	if u25 then
+		l__GarageRemote__27:FireServer(u25);
+		u25 = nil;
+	end;
+	if u2 and u2 and u2:FindFirstChild("Printer") then
+		l__FuncPrinter__28:FireServer(u2, "Collect");
+	end;
+	if u3 then
+		l__FuncPrinter__28:FireServer(u3, "Activate");
+	end;
+	if u4 then
+		l__MoneyHandler__29:FireServer(u4.world_money);
+	end;
+	if u6 then
+		l__FuncTurret__30:FireServer(u6, "Enable");
+	end;
+	if u8 then
+		if u8.Specs.Owner.Value == l__LocalPlayer__4 then
+			l__VendingMachine__31:FireServer(u8, "BuySelf");
+		else
+			l__VendingMachine__31:FireServer(u8, "Buy");
+		end;
+	end;
+	if u9 then
+		l__FoodMachine__32:FireServer(u9, "Buy");
+	end;
+	if u10 then
+		l__FuncFuse__33:FireServer("Use", u10);
+	end;
+	if u11 then
+		if u11.Specs.Plant.PlantType.Value == "none" then
+			l__FuncPlants__34:FireServer("Sun Flower", u11);
+		elseif u11.Pot.PlantGUI.State.Text == "Ready to Harvest" then
+			l__FuncPlants__34:FireServer("Harvest", u11);
+		end;
+	end;
+	if u12 then
+		l__FuncPlants__34:FireServer("EntityOnOff", u12);
+	end;
+	if u13 then
+		l__FuncPlants__34:FireServer("EntityOnOff", u13);
+	end;
+	if u14 then
+		if u14.Name == "SeedBoi" then
+			l__FuncPlants__34:FireServer("BuySeeds", u14, "SunFlowerSeeds");
+		end;
+		if u14.Name == "BankUpgBoi" and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u14.UpperTorso.CFrame.Position).magnitude <= 10 and l__LocalPlayer__4.Team.Name == "Banker" then
+			l__LocalPlayer__4.PlayerGui.ScreenGui.BankTycUpdates.Visible = true;
+		end;
+	end;
+	if u15 and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u15.PrimaryPart.CFrame.Position).magnitude <= 7 and not l__LocalPlayer__4.PlayerGui.ScreenGui.ATMgui.Visible then
+		l__LocalPlayer__4.PlayerGui.ScreenGui.ATMgui.Visible = true;
+		l__LocalPlayer__4.PlayerGui.ScreenGui.ATMgui.Menu.SelectedBank.Value = nil;
+	end;
+	if u16 and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u16.PrimaryPart.CFrame.Position).magnitude <= 7 and not l__LocalPlayer__4.PlayerGui.ScreenGui.BankGui.Visible then
+		l__LocalPlayer__4.PlayerGui.ScreenGui.BankGui.Visible = true;
+	end;
+	if u17 and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u17.UpperTorso.CFrame.Position).magnitude <= 10 then
+		l__BankFunctions__35:FireServer("RequestLoanBloxState");
+	end;
+	if u20 and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u20.PrimaryPart.CFrame.Position).magnitude <= 7 then
+		l__FuncPickWeapon__36:FireServer("PickUp", u20);
+	end;
+	if u18 then
+		if u18.Name == "Printer" then
+			l__BankTycoonShop__37:FireServer("Refill", u18, "Printer");
+		elseif u18.Name == "Painter" then
+			l__BankTycoonShop__37:FireServer("Refill", u18, "Painter");
+		end;
+	end;
+	if u21 and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u21.PrimaryPart.CFrame.Position).magnitude <= 10 then
+		l__FuncDoor__26:FireServer(u21);
+	end;
+	l__FuncPumpkin__38:FireServer(v12);
+end;
+local function u48(p8)
+	if p8 then
+		SelectObject(p8);
+	else
+		SelectObject();
+	end;
+	local v13 = nil;
+	for v14, v15 in pairs(l__LocalPlayer__4.Character:GetChildren()) do
+		if v15.Name == "Carrying" then
+			v13 = true;
+			l__PickUpPrinter__39:FireServer(v15.Value, "Drop", l__CurrentCamera__40.CFrame.lookVector);
+			v15:Destroy();
+		end;
+	end;
+	if not v13 and u19 then
+		if u19:FindFirstChild("IsCarrying") then
+			if u19.IsCarrying.Value == false and not u6 then
+				l__PickUpPrinter__39:FireServer(u19, "PickUp");
+			elseif u19.IsCarrying.Value == false and u6 then
+				if l__LocalPlayer__4 == u6.Specs.Owner.Value then
+					l__PickUpPrinter__39:FireServer(u19, "PickUp");
+				else
+					for v16, v17 in pairs(u6.Specs.Whitelist:GetChildren()) do
+						if l__LocalPlayer__4 == v17.Value then
+							l__PickUpPrinter__39:FireServer(u19, "PickUp");
+						end;
+					end;
+				end;
+			else
+				l__PickUpPrinter__39:FireServer(u19, "Drop");
+			end;
+		end;
+		if u7 and not l__LocalPlayer__4.PlayerGui.ResetOnSpawnHUD.HUDChangeSign.Visible then
+			l__LocalPlayer__4.PlayerGui.ResetOnSpawnHUD.HUDChangeSign.Visible = true;
+			l__LocalPlayer__4.PlayerGui.ResetOnSpawnHUD.HUDChangeSign.Target.Value = u7;
+		end;
+	end;
+	if u14 and u14.Name == "BankUpgBoi" and (l__LocalPlayer__4.Character.HumanoidRootPart.CFrame.Position - u14.UpperTorso.CFrame.Position).magnitude <= 10 and l__LocalPlayer__4.Team.Name == "Banker" then
+		l__BankTycoonShop__37:FireServer("FixStuckMoney", u18);
+	end;
+end;
+local function u49(p9)
+	if p9 then
+		SelectObject(p9);
+	else
+		SelectObject();
+	end;
+	if u5 then
+		l__EventMoneyWeapon__41:Fire(l__LocalPlayer__4, game.Players:GetPlayerFromCharacter(u5), "GiveMoney");
+	end;
+	if u6 then
+		if u6.Specs.Owner.Value == l__LocalPlayer__4 then
+			l__EventTurret__42:Fire(u6);
+			return;
+		end;
+		for v18, v19 in pairs(u6.Specs.Whitelist:GetChildren()) do
+			if v19.Value == l__LocalPlayer__4 then
+				l__EventTurret__42:Fire(u6);
+			end;
+		end;
+	end;
+end;
+local function u50(p10)
+	if p10 then
+		SelectObject(p10);
+	else
+		SelectObject();
+	end;
+	if u5 then
+		local v20 = l__LocalPlayer__4.Character:FindFirstChildOfClass("Tool");
+		if not v20 then
+			l__OpenNotification__43:FireServer("RedCrossIconClean", "No weapon equipped!");
+			return;
+		end;
+		l__GiveMoneyWeapon__44:FireServer("GiveWeapon", game.Players:GetPlayerFromCharacter(u5), v20);
+		if v20.CanBeDropped and not v20:FindFirstChild("StartingWeapon") then
+			local l__LaserPointer__21 = v20:FindFirstChild("LaserPointer");
+			if l__LaserPointer__21 and v20.Parent.Name == game.Players.LocalPlayer.Name then
+				local l__RedLaser__22 = l__LaserPointer__21:FindFirstChild("RedLaser");
+				if l__RedLaser__22.Size.Z == 200 then
+					l__RedLaser__22.Size = Vector3.new(0.05, 0.05, 5);
+					l__RedLaser__22.Transparency = 1;
+					l__RedLaser__22.WeldConstraint.Enabled = false;
+					local l__WorldPosition__23 = v20.Handle.Rail.WorldPosition;
+					l__RedLaser__22.CFrame = CFrame.new(l__WorldPosition__23, Vector3.new(l__WorldPosition__23.X + l__LaserPointer__21.CFrame.LookVector.X * 20, l__WorldPosition__23.Y + l__LaserPointer__21.CFrame.LookVector.Y * 20, l__WorldPosition__23.Z + l__LaserPointer__21.CFrame.LookVector.Z * 20)) * CFrame.new(0, 0, -2.7);
+					l__RedLaser__22.WeldConstraint.Enabled = true;
+					l__RedLaser__22.Transparency = 0.7;
+				end;
+			end;
+		end;
+	end;
+end;
+local function u51(p11)
+	if p11 then
+		SelectObject(p11);
+	else
+		SelectObject();
+	end;
+	if u22 then
+		if u22.Owner.Value == "none" and u22 then
+			l__ManageDoor__45:FireServer(u22, "Buy");
+			u22 = nil;
+			l__LocalPlayer__4.Character.HumanoidRootPart.Buy:Play();
+		end;
+		if u22 then
+			l__LocalPlayer__4.PlayerGui.ResetOnSpawnHUD["HUD DoorMenu"].Info.SelectedDoor.Value = u22;
+			u22 = nil;
+		end;
+	else
+		u22 = nil;
+	end;
+	if u24 then
+		l__ReWindowManager__46:FireServer(u24);
+		u24 = nil;
+	end;
+	if u2 then
+		l__FuncPrinter__28:FireServer(u2, "Manage");
+		u2 = nil;
+	end;
+	if u8 then
+		if u8.Specs.Owner.Value == l__LocalPlayer__4 then
+			l__VendingMachine__31:FireServer(u8, "Sell");
+		elseif l__LocalPlayer__4.Team == game.Teams.Chef then
+			l__VendingMachine__31:FireServer(u8, "BuyMachine");
+		end;
+	end;
+	if u9 then
+		l__FoodMachine__32:FireServer(u9, "ChangePrice");
+	end;
+	if u10 then
+		l__FuncFuse__33:FireServer("Sell", u10);
+	end;
+	if u11 and u11.WaterBottle.Transparency == 1 then
+		l__FuncPlants__34:FireServer("BuyFlask", u11);
+	end;
+	if u14 and u14.Name == "SeedBoi" then
+		l__FuncPlants__34:FireServer("SellAllSeeds", u14);
+	end;
+end;
+game:GetService("UserInputService").InputBegan:connect(function(p12, p13)
+	if not game.Players.LocalPlayer.leaderstats.UsingChat.Value then
+		if p12.KeyCode == Enum.KeyCode.E then
+			u47();
+			return;
+		end;
+		if p12.KeyCode == Enum.KeyCode.F then
+			u48();
+			return;
+		end;
+		if p12.KeyCode == Enum.KeyCode.T then
+			u49();
+			return;
+		end;
+		if p12.KeyCode ~= Enum.KeyCode.G then
+			if p12.KeyCode == Enum.KeyCode.R then
+				u51();
+			end;
+			return;
+		end;
+	else
+		return;
+	end;
+	u50();
+end);
+l__LookHandler__3.Event:Connect(function(p14, p15)
+	if p15 == "E" then
+		u47(p14);
+		return;
+	end;
+	if p15 == "F" then
+		u48(p14);
+		return;
+	end;
+	if p15 == "T" then
+		u49(p14);
+		return;
+	end;
+	if p15 == "G" then
+		u50(p14);
+		return;
+	end;
+	if p15 == "R" then
+		u51(p14);
+	end;
+end);
