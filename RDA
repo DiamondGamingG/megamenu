@@ -30,6 +30,7 @@ local printer_auto = Instance.new("TextButton")
 local collect_all = Instance.new("TextButton")
 local cam = Instance.new("TextButton")
 local pl_menu = Instance.new("TextButton")
+local food = Instance.new("TextButton")
 local Farm = Instance.new("TextButton")
 local LocalPlayer_button = Instance.new("TextButton")
 local Local_Frame = Instance.new("ScrollingFrame")
@@ -250,7 +251,6 @@ Farm_Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Farm_Frame.BackgroundTransparency = 1.000
 Farm_Frame.Position = UDim2.new(0.226687387, 0, 0.0822281092, 0)
 Farm_Frame.Size = UDim2.new(0, 433, 0, 351)
-Farm_Frame.Visible = false
 Farm_Frame.CanvasSize = UDim2.new(0, 0, 5, 0)
 Farm_Frame.ScrollBarThickness = 15
 
@@ -293,7 +293,7 @@ pt_menu.TextWrapped = true
 TextLabel_6.Parent = Farm_Frame
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(-0.0092378743, 0, 0.0759493709, 0)
+TextLabel_6.Position = UDim2.new(-0.0207852181, 0, 0.0784810185, 0)
 TextLabel_6.Size = UDim2.new(1, 0, 0, 50)
 TextLabel_6.Font = Enum.Font.SourceSans
 TextLabel_6.Text = "-- Autos--"
@@ -329,7 +329,7 @@ collect_all.TextWrapped = true
 cam.Name = "cam"
 cam.Parent = Farm_Frame
 cam.BackgroundColor3 = Color3.fromRGB(103, 103, 103)
-cam.Position = UDim2.new(0.226327926, 0, 0.162531644, 0)
+cam.Position = UDim2.new(-0.00923785567, 0, 0.153924063, 0)
 cam.Size = UDim2.new(0, 200, 0, 50)
 cam.Font = Enum.Font.Cartoon
 cam.Text = "Debug Camera"
@@ -341,7 +341,7 @@ cam.TextWrapped = true
 pl_menu.Name = "pl_menu"
 pl_menu.Parent = Farm_Frame
 pl_menu.BackgroundColor3 = Color3.fromRGB(117, 0, 0)
-pl_menu.Position = UDim2.new(-0.00461894274, 0, 0.115611807, 0)
+pl_menu.Position = UDim2.new(0.48267898, 0, 0.154092804, 0)
 pl_menu.Size = UDim2.new(0, 200, 0, 50)
 pl_menu.Font = Enum.Font.Cartoon
 pl_menu.Text = "Players Menu"
@@ -349,6 +349,18 @@ pl_menu.TextColor3 = Color3.fromRGB(0, 0, 0)
 pl_menu.TextScaled = true
 pl_menu.TextSize = 14.000
 pl_menu.TextWrapped = true
+
+food.Name = "food"
+food.Parent = Farm_Frame
+food.BackgroundColor3 = Color3.fromRGB(117, 0, 0)
+food.Position = UDim2.new(0.230946869, 0, 0.188523173, 0)
+food.Size = UDim2.new(0, 200, 0, 50)
+food.Font = Enum.Font.Cartoon
+food.Text = "Auto Food"
+food.TextColor3 = Color3.fromRGB(0, 0, 0)
+food.TextScaled = true
+food.TextSize = 14.000
+food.TextWrapped = true
 
 Farm.Name = "Farm"
 Farm.Parent = Beautiful_x_frame
@@ -381,7 +393,7 @@ Local_Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Local_Frame.BackgroundTransparency = 1.000
 Local_Frame.Position = UDim2.new(0.226687387, 0, 0.0822281092, 0)
 Local_Frame.Size = UDim2.new(0, 433, 0, 351)
-Local_Frame.CanvasPosition = Vector2.new(0, 150)
+Local_Frame.Visible = false
 Local_Frame.ScrollBarThickness = 15
 
 TextButton.Parent = Local_Frame
@@ -509,7 +521,7 @@ Free_Gui.BackgroundTransparency = 0.800
 Free_Gui.Position = UDim2.new(0.853999972, 0, 0.190999985, 0)
 Free_Gui.Size = UDim2.new(0, 147, 0, 286)
 Free_Gui.Visible = false
-Free_Gui.CanvasSize = UDim2.new(0, 0, 3, 0)
+Free_Gui.CanvasSize = UDim2.new(0, 0, 4, 0)
 
 UIListLayout.Parent = Free_Gui
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -523,7 +535,7 @@ example_btn.Name = "example_btn"
 example_btn.Parent = example
 example_btn.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
 example_btn.BackgroundTransparency = 0.450
-example_btn.Size = UDim2.new(1, 0, 0.0500000007, 0)
+example_btn.Size = UDim2.new(1, 0, 0.0250000004, 0)
 example_btn.Visible = false
 example_btn.Font = Enum.Font.SourceSans
 example_btn.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -630,7 +642,7 @@ TextLabel_11.TextWrapped = true
 
 -- Scripts:
 
-local function KKWMUJ_fake_script() -- TextLabel_2.LocalScript 
+local function QUJLG_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local txt = script.Parent
@@ -653,8 +665,8 @@ local function KKWMUJ_fake_script() -- TextLabel_2.LocalScript
 		txt.Text = "actually "..#players..' Players in the server'
 	end
 end
-coroutine.wrap(KKWMUJ_fake_script)()
-local function GMWEN_fake_script() -- Bunker_out.LocalScript 
+coroutine.wrap(QUJLG_fake_script)()
+local function UVCY_fake_script() -- Bunker_out.LocalScript 
 	local script = Instance.new('LocalScript', Bunker_out)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -662,8 +674,8 @@ local function GMWEN_fake_script() -- Bunker_out.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(62.1986504, -21.356245, 5.4013257, 0.495401055, -2.62940567e-08, -0.868664384, -2.93844789e-08, 1, -4.70275516e-08, 0.868664384, 4.88227485e-08, 0.495401055)
 	end)
 end
-coroutine.wrap(GMWEN_fake_script)()
-local function IEFXOIA_fake_script() -- Bunker_in.LocalScript 
+coroutine.wrap(UVCY_fake_script)()
+local function ZUAJ_fake_script() -- Bunker_in.LocalScript 
 	local script = Instance.new('LocalScript', Bunker_in)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -671,8 +683,8 @@ local function IEFXOIA_fake_script() -- Bunker_in.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(92.7138519, -21.356245, -25.6019821, -0.874225318, 5.80352406e-08, 0.485520422, 5.38827472e-08, 1, -2.25110561e-08, -0.485520422, 6.48143983e-09, -0.874225318)
 	end)
 end
-coroutine.wrap(IEFXOIA_fake_script)()
-local function GNBUDZ_fake_script() -- Spawn_tp.LocalScript 
+coroutine.wrap(ZUAJ_fake_script)()
+local function YYAOH_fake_script() -- Spawn_tp.LocalScript 
 	local script = Instance.new('LocalScript', Spawn_tp)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -680,8 +692,8 @@ local function GNBUDZ_fake_script() -- Spawn_tp.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(165.018997, -4.35625505, -327.964844, -0.915423989, 3.4472432e-08, 0.402490854, 2.66255995e-08, 1, -2.50905572e-08, -0.402490854, -1.22519381e-08, -0.915423989)
 	end)
 end
-coroutine.wrap(GNBUDZ_fake_script)()
-local function DUIWEG_fake_script() -- Jail.LocalScript 
+coroutine.wrap(YYAOH_fake_script)()
+local function NCLMQ_fake_script() -- Jail.LocalScript 
 	local script = Instance.new('LocalScript', Jail)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -689,8 +701,8 @@ local function DUIWEG_fake_script() -- Jail.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(153.805588, 11.6437435, 34.3166237, 0.0467466824, 6.89240167e-08, -0.998906791, -3.52731853e-08, 1, 6.73487435e-08, 0.998906791, 3.20862945e-08, 0.0467466824)
 	end)
 end
-coroutine.wrap(DUIWEG_fake_script)()
-local function UVYLGIS_fake_script() -- Mayor_House.LocalScript 
+coroutine.wrap(NCLMQ_fake_script)()
+local function EHRWSQ_fake_script() -- Mayor_House.LocalScript 
 	local script = Instance.new('LocalScript', Mayor_House)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -698,8 +710,8 @@ local function UVYLGIS_fake_script() -- Mayor_House.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(127.336861, 33.8437347, 46.1230583, 0.915211678, -3.91951005e-08, -0.402973354, 6.10460802e-08, 1, 4.13798737e-08, 0.402973354, -6.24712868e-08, 0.915211678)
 	end)
 end
-coroutine.wrap(UVYLGIS_fake_script)()
-local function MIWE_fake_script() -- Bunker_out_2.LocalScript 
+coroutine.wrap(EHRWSQ_fake_script)()
+local function LWBA_fake_script() -- Bunker_out_2.LocalScript 
 	local script = Instance.new('LocalScript', Bunker_out_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -707,8 +719,8 @@ local function MIWE_fake_script() -- Bunker_out_2.LocalScript
 		char.HumanoidRootPart.CFrame = CFrame.new(29.771265, 34.307251, 189.780426, 0.991200924, -8.50949355e-09, -0.132365987, 8.33644442e-09, 1, -1.86152416e-09, 0.132365987, 7.4168266e-10, 0.9912009)
 	end)
 end
-coroutine.wrap(MIWE_fake_script)()
-local function AKMMOQ_fake_script() -- Tp_button.LocalScript 
+coroutine.wrap(LWBA_fake_script)()
+local function XATZAW_fake_script() -- Tp_button.LocalScript 
 	local script = Instance.new('LocalScript', Tp_button)
 
 	local button = script.Parent
@@ -719,8 +731,8 @@ local function AKMMOQ_fake_script() -- Tp_button.LocalScript
 		button.Parent.Tps_Frame.Visible = true
 	end)
 end
-coroutine.wrap(AKMMOQ_fake_script)()
-local function GJMYJ_fake_script() -- p_menu.LocalScript 
+coroutine.wrap(XATZAW_fake_script)()
+local function ACMYMC_fake_script() -- p_menu.LocalScript 
 	local script = Instance.new('LocalScript', p_menu)
 
 	local gui = false
@@ -738,8 +750,8 @@ local function GJMYJ_fake_script() -- p_menu.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GJMYJ_fake_script)()
-local function LBHJI_fake_script() -- pt_menu.LocalScript 
+coroutine.wrap(ACMYMC_fake_script)()
+local function PBKTQ_fake_script() -- pt_menu.LocalScript 
 	local script = Instance.new('LocalScript', pt_menu)
 
 	local gui = false
@@ -757,8 +769,8 @@ local function LBHJI_fake_script() -- pt_menu.LocalScript
 		end
 	end)
 end
-coroutine.wrap(LBHJI_fake_script)()
-local function VBIYIH_fake_script() -- printer_auto.LocalScript 
+coroutine.wrap(PBKTQ_fake_script)()
+local function AFHY_fake_script() -- printer_auto.LocalScript 
 	local script = Instance.new('LocalScript', printer_auto)
 
 	local var = false
@@ -768,36 +780,65 @@ local function VBIYIH_fake_script() -- printer_auto.LocalScript
 		for _, p in pairs(game:GetService("Workspace")["RP_Entities"]:GetDescendants()) do
 			if p.Name == "Printer" then
 				if p.PrinterInfo.Owner.Text == game.Players.LocalPlayer.Name then
-					running = true
-					wait(0.1)
 					local specs = p.Parent.Specs
-					game.Players.LocalPlayer.Character.Camera:Destroy()
-					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(p.CFrame)
-					local cam = game.Workspace.CurrentCamera
-					cam.CameraType = "Fixed"
-					cam.Focus = p.CFrame
-					local remote = game.ReplicatedStorage.FuncPrinter
-					local arg1 = p.Parent
-					local arg2 = "Collect"
-					task.wait(0.1)
-					remote:FireServer(arg1, arg2)
+					if specs.Parent.Onfire == true then
+						while specs.OnFire == true do
+							running = true
+							local fire_remote = game.ReplicatedStorage.FuncPumpkin
+							game.Players.LocalPlayer.Character.Camera:Destroy()
+							game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(p.CFrame)
+							wait(0.1)
+							local cam = game.Workspace.CurrentCamera
+							cam.CameraType = "Fixed"
+							cam.Focus = p.CFrame
+							wait(0.1)
 	
-					-- cooling
-					print("------------------------------------------------")
-					local cooling_v1 = p.Screen.PrinterStats.Cooling.Text
-					local cooling_v2 = string.gsub(cooling_v1, "%%", "")
-					local cooling = tonumber(cooling_v2)
-					if cooling <= 20 then
-						wait(0.1)
-						local remote2 = game.ReplicatedStorage.FuncPrinterUpg
-						local arg = game:GetService("ReplicatedStorage").Upgrades.Moneyprinter.Cooler.Coolant
-						remote2:FireServer(p.Parent, arg)
+							fire_remote:FireServer(p.Parent)
+							wait(0.1)
+							local cooling_v1 = p.Screen.PrinterStats.Cooling.Text
+							local cooling_v2 = string.gsub(cooling_v1, "%%", "")
+							local cooling = tonumber(cooling_v2)
+							if cooling <= 20 then
+								wait(0.1)
+								local remote2 = game.ReplicatedStorage.FuncPrinterUpg
+								local arg = game:GetService("ReplicatedStorage").Upgrades.Moneyprinter.Cooler.Coolant
+								remote2:FireServer(p.Parent, arg)
+							end
+							game:GetService("StarterPlayer").StarterCharacterScripts.Camera:Clone().Parent = game.Players.LocalPlayer.Character
+							game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(ancient_pos)
+							running = false
+						end
+					else
+						if specs.MoneyInStore.Value > 0 then
+							running = true
+							wait(0.1)
+							game.Players.LocalPlayer.Character.Camera:Destroy()
+							game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(p.CFrame)
+							local cam = game.Workspace.CurrentCamera
+							cam.CameraType = "Fixed"
+							cam.Focus = p.CFrame
+							local remote = game.ReplicatedStorage.FuncPrinter
+							local arg1 = p.Parent
+							local arg2 = "Collect"
+							task.wait(0.1)
+							remote:FireServer(arg1, arg2)
+							-- cooling
+							print("------------------------------------------------")
+							local cooling_v1 = p.Screen.PrinterStats.Cooling.Text
+							local cooling_v2 = string.gsub(cooling_v1, "%%", "")
+							local cooling = tonumber(cooling_v2)
+							if cooling <= 20 then
+								wait(0.1)
+								local remote2 = game.ReplicatedStorage.FuncPrinterUpg
+								local arg = game:GetService("ReplicatedStorage").Upgrades.Moneyprinter.Cooler.Coolant
+								remote2:FireServer(p.Parent, arg)
+							end
+							task.wait(0.5)
+							game:GetService("StarterPlayer").StarterCharacterScripts.Camera:Clone().Parent = game.Players.LocalPlayer.Character
+							game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(ancient_pos)
+							running = false
+						end
 					end
-	
-					task.wait(1)
-					game:GetService("StarterPlayer").StarterCharacterScripts.Camera:Clone().Parent = game.Players.LocalPlayer.Character
-					game.Players.LocalPlayer.Character:SetPrimaryPartCFrame(ancient_pos)
-					running = false
 				end
 			end
 		end
@@ -812,14 +853,15 @@ local function VBIYIH_fake_script() -- printer_auto.LocalScript
 			script.Parent.BackgroundColor3 = Color3.new(0, 0.666667, 0)
 		end
 	end)
-	while wait(10) and var do
+	
+	while wait(0.2) and var do
 		if running == false then
 			autofarm()
 		end
 	end
 end
-coroutine.wrap(VBIYIH_fake_script)()
-local function PWVWT_fake_script() -- collect_all.LocalScript 
+coroutine.wrap(AFHY_fake_script)()
+local function ZCUC_fake_script() -- collect_all.LocalScript 
 	local script = Instance.new('LocalScript', collect_all)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -845,16 +887,16 @@ local function PWVWT_fake_script() -- collect_all.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PWVWT_fake_script)()
-local function SRCV_fake_script() -- cam.LocalScript 
+coroutine.wrap(ZCUC_fake_script)()
+local function ZVYPHCY_fake_script() -- cam.LocalScript 
 	local script = Instance.new('LocalScript', cam)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("StarterPlayer").StarterCharacterScripts.Camera:Clone().Parent = game.Players.LocalPlayer.Character
 	end)
 end
-coroutine.wrap(SRCV_fake_script)()
-local function KRUIVMW_fake_script() -- pl_menu.LocalScript 
+coroutine.wrap(ZVYPHCY_fake_script)()
+local function WDRVW_fake_script() -- pl_menu.LocalScript 
 	local script = Instance.new('LocalScript', pl_menu)
 
 	local gui = false
@@ -872,8 +914,25 @@ local function KRUIVMW_fake_script() -- pl_menu.LocalScript
 		end
 	end)
 end
-coroutine.wrap(KRUIVMW_fake_script)()
-local function XLZLXQK_fake_script() -- Farm.LocalScript 
+coroutine.wrap(WDRVW_fake_script)()
+local function JHWHE_fake_script() -- food.LocalScript 
+	local script = Instance.new('LocalScript', food)
+
+	local var = false
+	local frame = script.Parent.Parent.Parent.Parent.Menus.Plrs
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if var then
+			var = false
+			script.Parent.BackgroundColor3 = Color3.new(0.458824, 0, 0)
+		else
+			var = true
+			script.Parent.BackgroundColor3 = Color3.new(0, 0.666667, 0)
+		end
+	end)
+end
+coroutine.wrap(JHWHE_fake_script)()
+local function GDMG_fake_script() -- Farm.LocalScript 
 	local script = Instance.new('LocalScript', Farm)
 
 	local button = script.Parent
@@ -884,8 +943,8 @@ local function XLZLXQK_fake_script() -- Farm.LocalScript
 		button.Parent.Farm_Frame.Visible = true
 	end)
 end
-coroutine.wrap(XLZLXQK_fake_script)()
-local function DZKOI_fake_script() -- LocalPlayer_button.LocalScript 
+coroutine.wrap(GDMG_fake_script)()
+local function PPPMHK_fake_script() -- LocalPlayer_button.LocalScript 
 	local script = Instance.new('LocalScript', LocalPlayer_button)
 
 	local button = script.Parent
@@ -896,8 +955,8 @@ local function DZKOI_fake_script() -- LocalPlayer_button.LocalScript
 		button.Parent.Farm_Frame.Visible = false
 	end)
 end
-coroutine.wrap(DZKOI_fake_script)()
-local function FMHS_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(PPPMHK_fake_script)()
+local function HOIAEVV_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local Stamina = false
@@ -916,8 +975,8 @@ local function FMHS_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FMHS_fake_script)()
-local function FHOCHIN_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(HOIAEVV_fake_script)()
+local function KALJ_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local btn = script.Parent
@@ -980,8 +1039,8 @@ local function FHOCHIN_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FHOCHIN_fake_script)()
-local function NUNS_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(KALJ_fake_script)()
+local function KYEWF_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local btn = script.Parent
@@ -1005,8 +1064,8 @@ local function NUNS_fake_script() -- TextButton_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NUNS_fake_script)()
-local function OJSFANF_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(KYEWF_fake_script)()
+local function RSYHKPF_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local btn = script.Parent
@@ -1032,16 +1091,16 @@ local function OJSFANF_fake_script() -- TextButton_4.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OJSFANF_fake_script)()
-local function PSLLKWN_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(RSYHKPF_fake_script)()
+local function MIZVL_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/HRT9014/open-source/main/ESP', true))()
 	end)
 end
-coroutine.wrap(PSLLKWN_fake_script)()
-local function MALRMNB_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(MIZVL_fake_script)()
+local function TOGZCU_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local btn = script.Parent
@@ -1076,8 +1135,8 @@ local function MALRMNB_fake_script() -- TextButton_6.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MALRMNB_fake_script)()
-local function RBVTQL_fake_script() -- Beautiful_x_frame.LocalScript 
+coroutine.wrap(TOGZCU_fake_script)()
+local function YEYKV_fake_script() -- Beautiful_x_frame.LocalScript 
 	local script = Instance.new('LocalScript', Beautiful_x_frame)
 
 	local frame = script.Parent
@@ -1085,8 +1144,8 @@ local function RBVTQL_fake_script() -- Beautiful_x_frame.LocalScript
 	frame.Active = true
 	frame.Selectable = true
 end
-coroutine.wrap(RBVTQL_fake_script)()
-local function RZZOOL_fake_script() -- Free_Gui.LocalScript 
+coroutine.wrap(YEYKV_fake_script)()
+local function ARTWZ_fake_script() -- Free_Gui.LocalScript 
 	local script = Instance.new('LocalScript', Free_Gui)
 
 	local ex = script.Parent.example.example_btn
@@ -1135,8 +1194,8 @@ local function RZZOOL_fake_script() -- Free_Gui.LocalScript
 		search()
 	end
 end
-coroutine.wrap(RZZOOL_fake_script)()
-local function ZGLXBQZ_fake_script() -- Pot_Gui.LocalScript 
+coroutine.wrap(ARTWZ_fake_script)()
+local function QYZSAQW_fake_script() -- Pot_Gui.LocalScript 
 	local script = Instance.new('LocalScript', Pot_Gui)
 
 	local ex = script.Parent.example.example_btn
@@ -1177,8 +1236,8 @@ local function ZGLXBQZ_fake_script() -- Pot_Gui.LocalScript
 		search()
 	end
 end
-coroutine.wrap(ZGLXBQZ_fake_script)()
-local function QOHMAIE_fake_script() -- Plrs.LocalScript 
+coroutine.wrap(QYZSAQW_fake_script)()
+local function GINI_fake_script() -- Plrs.LocalScript 
 	local script = Instance.new('LocalScript', Plrs)
 
 	local example = script.Parent.TextButton
@@ -1228,8 +1287,8 @@ local function QOHMAIE_fake_script() -- Plrs.LocalScript
 		findplayers()
 	end
 end
-coroutine.wrap(QOHMAIE_fake_script)()
-local function HWHF_fake_script() -- Robloxx_gui.LocalScript 
+coroutine.wrap(GINI_fake_script)()
+local function JXMZDMZ_fake_script() -- Robloxx_gui.LocalScript 
 	local script = Instance.new('LocalScript', Robloxx_gui)
 
 	game.StarterGui:SetCore("SendNotification", {
@@ -1272,10 +1331,10 @@ local function HWHF_fake_script() -- Robloxx_gui.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HWHF_fake_script)()
-local function BSTUQVL_fake_script() -- Robloxx_gui.gui2lua #1 
+coroutine.wrap(JXMZDMZ_fake_script)()
+local function ABWBYT_fake_script() -- Robloxx_gui.gui2lua #1 
 	local script = Instance.new('LocalScript', Robloxx_gui)
 
 	
 end
-coroutine.wrap(BSTUQVL_fake_script)()
+coroutine.wrap(ABWBYT_fake_script)()
