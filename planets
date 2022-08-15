@@ -1,0 +1,85 @@
+local vll = 1
+local newplan = Instance.new("Part")
+newplan.Parent = game.Workspace
+newplan.Size += Vector3.new(136.5, 136.5, 136.5)
+newplan.Position = Vector3.new(0, 0, 0)
+newplan.Anchored = true
+newplan.Name = "Planet-1"
+newplan.Shape = Enum.PartType.Ball
+newplan.BrickColor = BrickColor.random()
+local biliboard = Instance.new("BillboardGui")
+biliboard.Parent = newplan
+biliboard.AlwaysOnTop = true
+biliboard.Size = UDim2.new(500, 100)
+biliboard.StudsOffset = Vector3.new(0, 500, 0)
+local textlabel = Instance.new("TextLabel")
+textlabel.Parent = biliboard
+textlabel.Size = UDim2.new(1, 1)
+textlabel.Text = "Planet-#1"
+textlabel.TextScaled = true
+local light = Instance.new("PointLight")
+light.Range = 50
+while wait() do
+	vll = vll + 1
+
+	print(vll)
+	local pl = game.Workspace:WaitForChild("Planet-"..vll - 1)
+	local rdm2 = math.random(-50000, 50000)
+	local tranp2 = math.random(0, 8)
+	local tranp = tranp2 / 10
+	local rdm = math.random(1, 2)
+	local cln = pl:Clone()
+	cln.Parent = game.Workspace
+	cln.Name = "Planet-"..vll
+	cln.BrickColor = BrickColor.random()
+	cln.Transparency = tranp
+	print(Enum.Material:GetEnumItems())
+	for _, thing in pairs(Enum.Material:GetEnumItems()) do
+		print(thing.Name)
+		
+		cln.Material = thing
+		break
+	end
+	local rdm3 = math.random(1, 2)
+	local rdm5 = math.random(20, 200)
+	local size = math.random(500, 1000)
+	cln.Size = Vector3.new(size, size, size)
+	cln.BillboardGui.StudsOffset = Vector3.new(0, rdm5 + rdm5 + rdm5 / 1.5 , 0)
+	cln.BillboardGui.AlwaysOnTop = true
+	cln.BillboardGui.Size = UDim2.new(size, size, size)
+	cln.BillboardGui.TextLabel.Text = "Planet-#"..vll
+	if rdm3 == 1 then
+		cln.Position = Vector3.new(pl.Position.X, pl.Position.Y + rdm5, pl.Position.Z + rdm2)
+		wait(0.1)
+	elseif rdm3 == 2 then
+		cln.Position = Vector3.new(pl.Position.X + rdm2, pl.Position.Y - rdm5, pl.Position.Z)
+		wait(0.1)
+	end
+	
+	local rdm3 = math.random(1, 3)
+	if rdm == 1 or rdm == 3 then
+		cln.CanCollide = true
+	elseif rdm == 2 then
+		cln.CanCollide = false
+	end
+	
+	if size == 100 then
+		print("alerttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt")
+		local explosion = Instance.new("Explosion")
+		explosion.Position = Vector3.new(cln.Position.X, cln.Position.Y, cln.Position.Z)
+		explosion.TimeScale = 1
+		explosion.BlastRadius = 99999
+		
+	elseif size < 500 then
+		local fire = Instance.new("Fire")
+		fire.Parent = cln
+		fire.Size = 20
+		cln.BrickColor = BrickColor.new(57, 19, 0)
+		cln.Color = Color3.fromRGB(57, 19, 0)
+		cln.Material = Enum.Material.Rock
+	end
+	
+	if vll == 1000 then
+		break
+	end
+end
